@@ -1,0 +1,31 @@
+{
+  "name": "googleye",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcloud": "browserify --standalone cloud resources/assets/d3-cloud.js > public/js/cloud.js",
+    "buildclient": "browserify resources/js/client.js > public/js/client.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "demon": "node app/demon.js",
+    "example": "node app/example.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "s10n",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "browserify": "^16.2.3",
+    "cheerio": "^1.0.0-rc.2",
+    "circular-json": "^0.5.9",
+    "d3": "^5.7.0",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "jsonfile": "^5.0.0",
+    "jsonframe-cheerio": "^3.0.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0"
+  }
+}
